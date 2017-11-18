@@ -29,7 +29,7 @@ var documenterSearchIndex = {"docs": [
     "page": "Home",
     "title": "Library Outline",
     "category": "section",
-    "text": "Pages = [\n    \"lib/implicit_bernstein_form.md\"\n]\nDepth = 2"
+    "text": "Pages = [\n    \"lib/implicit_bernstein_form.md\",\n    \"lib/tensorial_bernstein_form.md\"\n]\nDepth = 2"
 },
 
 {
@@ -126,6 +126,54 @@ var documenterSearchIndex = {"docs": [
     "title": "Multivariate monomials",
     "category": "section",
     "text": "multivariate"
+},
+
+{
+    "location": "lib/tensorial_bernstein_form.html#",
+    "page": "Tensorial Bernstein form",
+    "title": "Tensorial Bernstein form",
+    "category": "page",
+    "text": ""
+},
+
+{
+    "location": "lib/tensorial_bernstein_form.html#Tensorial-Bernstein-Form-1",
+    "page": "Tensorial Bernstein form",
+    "title": "Tensorial Bernstein Form",
+    "category": "section",
+    "text": "This section of the manual describes the functions to compute the tensorial Bernstein form of univariate and multivariate monomials.Pages = [\"tensorial_bernstein_form.md\"]\nDepth = 3CurrentModule = BernsteinExpansions"
+},
+
+{
+    "location": "lib/tensorial_bernstein_form.html#BernsteinExpansions.generate_tensor_form",
+    "page": "Tensorial Bernstein form",
+    "title": "BernsteinExpansions.generate_tensor_form",
+    "category": "Function",
+    "text": "generate_tensor_form(implicitform::ImplicitForm{T})::Vector{T} where{T<:Number}\n\nCompute the Bernstein expansion in tensorial form given its implicit form.\n\nInput\n\nimplicitform – Bernstein expansion in implicit form\n\nAlgorithm\n\nThis implementation uses Julia's Kronecker product kron function.\n\n\n\n"
+},
+
+{
+    "location": "lib/tensorial_bernstein_form.html#Tensorial-Form-1",
+    "page": "Tensorial Bernstein form",
+    "title": "Tensorial Form",
+    "category": "section",
+    "text": "generate_tensor_form"
+},
+
+{
+    "location": "lib/tensorial_bernstein_form.html#BernsteinExpansions.tensor_multivariate",
+    "page": "Tensorial Bernstein form",
+    "title": "BernsteinExpansions.tensor_multivariate",
+    "category": "Function",
+    "text": "tensor_multivariate(k::Vector{Int64}, l::Vector{Int64},\n                      low::Vector{T}, high::Vector{T})::Vector{T} where {T<:Number}\n\nCompute the Bernstein coefficients of a multivariate monomial in the tensor form.\n\nInput\n\nk    – vector of degrees for each monomial\nl    – vector of degrees of the Bernstein polynomial for each monomial\nlow  – the lower bounds of the interval where the Bernstein coefficients are computed\nhigh – the upper bounds of the interval the Bernstein coefficients are computed\n\nAlgorithm\n\nThis implementation uses Julia's Kronecker product kron function.\n\n\n\n"
+},
+
+{
+    "location": "lib/tensorial_bernstein_form.html#Multivariate-monomials-1",
+    "page": "Tensorial Bernstein form",
+    "title": "Multivariate monomials",
+    "category": "section",
+    "text": "tensor_multivariate"
 },
 
 {
