@@ -177,6 +177,14 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
+    "location": "about.html#Running-the-benchmarks-1",
+    "page": "About",
+    "title": "Running the benchmarks",
+    "category": "section",
+    "text": "This package contains a suite of benchmarks that is handled through PkgBenchmark. To run the benchmarks, execute the following commands in Julia's REPL:julia> using BernsteinExpansions, PkgBenchmark\njulia> benchmarkpkg(\"BernsteinExpansions\")To save the results to a custom directory, use:julia> benchmarkpkg(\"BernsteinExpansions\", resultsdir=\"/Users/forets/Projects\")For further options see the inline help of benchmarkpkg."
+},
+
+{
     "location": "about.html#Credits-1",
     "page": "About",
     "title": "Credits",
