@@ -161,11 +161,11 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "lib/tensorial_bernstein_form.html#BernsteinExpansions.tensor_multivariate",
+    "location": "lib/tensorial_bernstein_form.html#BernsteinExpansions.multivariate_tensor",
     "page": "Tensorial Bernstein form",
-    "title": "BernsteinExpansions.tensor_multivariate",
+    "title": "BernsteinExpansions.multivariate_tensor",
     "category": "Function",
-    "text": "tensor_multivariate(k::Vector{Int64}, l::Vector{Int64},\n                      low::Vector{T}, high::Vector{T})::Vector{T} where {T<:Number}\n\nCompute the Bernstein coefficients of a multivariate monomial in the tensor form.\n\nInput\n\nk    – vector of degrees for each monomial\nl    – vector of degrees of the Bernstein polynomial for each monomial\nlow  – the lower bounds of the interval where the Bernstein coefficients are computed\nhigh – the upper bounds of the interval the Bernstein coefficients are computed\n\nAlgorithm\n\nThis implementation uses Julia's Kronecker product kron function.\n\n\n\n"
+    "text": "multivariate_tensor(k::Vector{Int64}, l::Vector{Int64},\n                      low::Vector{T}, high::Vector{T})::Vector{T} where {T<:Number}\n\nCompute the Bernstein coefficients of a multivariate monomial in the tensor form.\n\nInput\n\nk    – vector of degrees for each monomial\nl    – vector of degrees of the Bernstein polynomial for each monomial\nlow  – the lower bounds of the interval where the Bernstein coefficients are computed\nhigh – the upper bounds of the interval the Bernstein coefficients are computed\n\nAlgorithm\n\nThis implementation uses Julia's Kronecker product kron function.\n\n\n\n"
 },
 
 {
@@ -173,7 +173,7 @@ var documenterSearchIndex = {"docs": [
     "page": "Tensorial Bernstein form",
     "title": "Multivariate monomials",
     "category": "section",
-    "text": "tensor_multivariate"
+    "text": "multivariate_tensor"
 },
 
 {
